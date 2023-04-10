@@ -1,0 +1,40 @@
+@import "@/styles/_variables.scss";
+@import "@/styles/_mixins.scss";
+
+.lg-h1 {
+  font-family: 'Manrope', sans-serif;
+  @include Text-FS-FW-LH(64px, 400, 84px);
+  color: $color-primary;
+}
+
+.lg-h2 {
+  font-family: 'Manrope', sans-serif;
+  @include Text-FS-FW-LH(48px, 400, 72px);
+  color: $color-primary;
+}
+
+.md-h3 {
+  font-family: 'Open Sans', sans-serif;
+  @include Text-FS-FW-LH(20px, 700, 32px);
+  color: $color-secondary;
+}
+
+.md-h4 {
+  font-family: 'Open Sans', sans-serif;
+  @include Text-FS-FW-LH(16px, 700, 28px);
+  color: $color-primary;
+}
+
+.sm-h5 {
+  font-family: 'Open Sans', sans-serif;
+  @include Text-FS-FW-LH(20px, 400, 32px);
+  color: $color-primary;
+}
+
+.sm-h6 {
+  font-family: 'Open Sans', sans-serif;
+  @include Text-FS-FW-LH(16px, 400, 28px);
+  color: $color-secondary;
+}
+
+

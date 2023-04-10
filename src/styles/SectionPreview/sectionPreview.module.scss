@@ -1,0 +1,47 @@
+@import "@/styles/_variables.scss";
+@import "@/styles/_mixins.scss";
+
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 100px;
+  padding-top: 40px;
+  padding-bottom: 72px;
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    background: $color-primary;
+    bottom: 0;
+  }
+
+  .img {
+    object-fit: scale-down;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 550px;
+    width: 100%;
+
+    .text {
+      font-family: 'Manrope', sans-serif;
+      @include Text-FS-FW-LH(48px, 400, 72px);
+      color: $color-secondary;
+
+    }
+
+    .author {
+      margin-top: 20px;
+    }
+
+  }
+
+
+}

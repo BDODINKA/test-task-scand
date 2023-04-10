@@ -1,0 +1,13 @@
+@import "@/styles/_mixins.scss";
+@import "@/styles/_variables.scss";
+
+.wrapper {
+  @include Flex-Center();
+
+  .title_block {
+    @include Flex-Center();
+    flex-direction: column;
+    gap: 12px;
+    margin: 27.5px 0;
+  }
+}

@@ -1,0 +1,14 @@
+@import "@/styles/_mixins.scss";
+@import "@/styles/_variables.scss";
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  .text {
+    font-family: 'Open Sans', sans-serif;
+    @include Text-FS-FW-LH(16px, 400, 28px);
+    color: $color-third;
+  }
+}

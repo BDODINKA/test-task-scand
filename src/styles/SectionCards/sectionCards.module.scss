@@ -1,0 +1,24 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 96px 200px 124px;
+  gap: 40px;
+
+  .title {
+    width: 100%;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 50px;
+    grid-row-gap: 80px;
+  }
+
+  .btn {
+    margin-top: 56px;
+  }
+
+}
