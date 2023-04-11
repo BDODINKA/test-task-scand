@@ -1,10 +1,10 @@
-import React from 'react';
+import React, {FC} from 'react';
 import Image from "next/image";
 import Logotype from "@/assets/Logo.svg";
 
-export const Logo = () => {
+export const Logo: FC<{ className?: string }> = ({className}) => {
     return (
-        <Image src={Logotype} alt={'Logo'}/>
+        <Image src={Logotype} alt={'Logo'} className={className}/>
     );
 };
 

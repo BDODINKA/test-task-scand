@@ -10,7 +10,7 @@ export const Footer = () => {
         <footer>
             <div className={style.wrapper}>
                 <div className={style.description_items}>
-                    <Logo/>
+                    <Logo className={style.logo}/>
                     <p className={style.description}>{'Social media validation business model canvas graphical user interface launch party creative facebook iPad twitter.'}</p>
                     <p className={style.copyright}>{'All rights reserved.'}</p>
                 </div>
@@ -25,7 +25,6 @@ export const Footer = () => {
                     </LinkList>
                     <LinkList link={ListLinkDataThree}/>
                 </div>
-
             </div>
         </footer>
     );

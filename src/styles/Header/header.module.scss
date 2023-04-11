@@ -11,6 +11,13 @@
     display: flex;
     justify-content: space-between;
 
+    input[id='menu_toggle'] {
+      display: none;
+    }
+
+    .menu_btn {
+    }
+
     .nav_items {
       display: flex;
       align-items: center;
@@ -28,5 +35,111 @@
       }
     }
   }
+}
 
+@media screen and (max-width: 1024px) {
+  .header {
+    .wrapper {
+      .nav_items {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    .wrapper {
+      padding: 15px;
+
+      .menu_btn {
+        display: flex;
+        position: fixed;
+        z-index: 2;
+        align-items: center;
+        right: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        background: $color-four;
+        box-shadow: 1px 1px 4px $color-third;
+
+        > span {
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          background-color: $color-primary;
+          transition: 0.3s;
+
+          &:before, &:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: $color-primary;
+            transition: 0.3s;
+          }
+
+          &:before {
+            content: "";
+            top: -8px;
+          }
+
+          &:after {
+            content: "";
+            top: 8px;
+          }
+        }
+      }
+
+      input[id='menu_toggle'] {
+        display: block;
+        position: fixed;
+        opacity: 0;
+
+        &:checked ~ .menu_btn {
+
+
+          > span {
+            transform: rotate(45deg);
+
+            &:before {
+              top: 0;
+              transform: rotate(0);
+            }
+
+            &:after {
+              top: 0;
+              transform: rotate(90deg);
+            }
+          }
+        }
+
+        &:checked ~ .nav_items {
+          visibility: visible;
+          right: 0;
+        }
+      }
+
+      .nav_items {
+        flex-direction: column;
+        visibility: hidden;
+        position: fixed;
+        justify-content: space-evenly;
+        top: 0;
+        right: 0;
+        max-width: 225px;
+        width: 100%;
+        height: 90vh;
+        background: $color-four;
+        box-shadow: 2px 2px 10px $color-third;
+        z-index: 1;
+      }
+    }
+
+  }
 }

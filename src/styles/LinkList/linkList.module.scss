@@ -3,8 +3,6 @@
 
 
 .list_items {
-
-
   .list_item {
     list-style: none;
     display: flex;
@@ -13,19 +11,25 @@
     .item_link {
       margin-top: 32px;
       font-family: 'Open Sans', sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 32px;
-      /* or 160% */
+      @include Text-FS-FW-LH(20px, 400, 32px);
+      color: $color-third;
+    }
+  }
+}
 
+@media screen and (max-width: 768px) {
+  .list_items {
+    .list_item {
+      list-style: none;
       display: flex;
-      align-items: center;
-
-      /* Gray */
-
-      color: #777777;
-
+      align-items: flex-end;
+      justify-content: center;
+      .item_link {
+        margin-top: 12px;
+        font-family: 'Open Sans', sans-serif;
+        @include Text-FS-FW-LH(13px, 400, 32px);
+        color: $color-third;
+      }
     }
   }
 }
