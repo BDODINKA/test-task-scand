@@ -4,8 +4,8 @@ import {SectionTitle} from "@/components/sectionTitle/SectionTitle";
 import {SectionPreview} from "@/components/sectionPreview/SectionPreview";
 import {SectionCards} from "@/components/sectionCards/SectionCards";
 import {SectionEnterPrise} from "@/components/sectionEnterPrise/sectionEnterPrise";
+import {Footer} from "@/components/footer/Footer";
 
-// const inter = Inter({subsets: ['latin']})
 
 export default function Home() {
     return (
@@ -23,6 +23,7 @@ export default function Home() {
                 <SectionCards/>
                 <SectionEnterPrise/>
             </main>
+            <Footer/>
         </>
     )
 }

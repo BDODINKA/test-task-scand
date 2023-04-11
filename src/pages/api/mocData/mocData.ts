@@ -11,7 +11,7 @@ import threeUser from "@/assets/threeUser.webp"
 
 export const mocData = [
     {
-        id: '',
+        id: '1',
         img: one,
         title: 'Category',
         date: 'November 22, 2021',
@@ -20,7 +20,7 @@ export const mocData = [
         authorName: 'Chandler Bing'
     },
     {
-        id: '',
+        id: '2',
         img: two,
         title: 'Category',
         date: 'November 22, 2021',
@@ -29,7 +29,7 @@ export const mocData = [
         authorName: 'Rachel Green'
     },
     {
-        id: '',
+        id: '3',
         img: third,
         title: 'Category',
         date: 'November 22, 2021',
@@ -38,7 +38,7 @@ export const mocData = [
         authorName: 'Monica Geller'
     },
     {
-        id: '',
+        id: '4',
         img: four,
         title: 'Category',
         date: 'November 22, 2021',
@@ -47,7 +47,7 @@ export const mocData = [
         authorName: 'Chandler Bing'
     },
     {
-        id: '',
+        id: '5',
         img: five,
         title: 'Category',
         date: 'November 22, 2021',
@@ -56,7 +56,7 @@ export const mocData = [
         authorName: 'Rachel Green'
     },
     {
-        id: '',
+        id: '6',
         img: six,
         title: 'Category',
         date: 'November 22, 2021',

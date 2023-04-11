@@ -11,3 +11,23 @@
     margin: 27.5px 0;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    .title_block {
+      gap: 0;
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 0 15px;
+
+    .title_block {
+      gap: 0;
+      margin: 0;
+    }
+  }
+}

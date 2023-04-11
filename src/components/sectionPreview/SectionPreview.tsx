@@ -5,6 +5,7 @@ import {Category} from "@/components/common/category/Category";
 import Image from "next/image";
 import style from "@/styles/SectionPreview/sectionPreview.module.scss";
 import Bg from "@/assets/Bg.png"
+import user from "@/assets/oneUser.webp"
 
 export const SectionPreview = () => {
     return (
@@ -21,9 +22,9 @@ export const SectionPreview = () => {
                 />
                 <p className={style.text}>Pitch termsheet backing validation focus release.</p>
                 <Author
-                    ava={''}
+                    ava={user}
                     className={style.author}
-                    children={'cacascas'}
+                    children={'Chandler Bing'}
                 />
             </div>
         </Wrapper>

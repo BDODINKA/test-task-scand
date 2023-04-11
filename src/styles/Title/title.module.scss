@@ -2,9 +2,7 @@
 @import "@/styles/_mixins.scss";
 
 .lg-h1 {
-  font-family: 'Manrope', sans-serif;
   @include Text-FS-FW-LH(64px, 400, 84px);
-  color: $color-primary;
 }
 
 .lg-h2 {
@@ -35,6 +33,42 @@
   font-family: 'Open Sans', sans-serif;
   @include Text-FS-FW-LH(16px, 400, 28px);
   color: $color-secondary;
+}
+
+@media screen and (max-width: 1024px) {
+  .lg-h1 {
+    @include Text-FS-FW-LH(48px, 400, 72px);
+  }
+
+  .lg-h2 {
+    @include Text-FS-FW-LH(32px, 400, 64px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lg-h1 {
+    @include Text-FS-FW-LH(32px, 400, 64px);
+  }
+
+  .lg-h2 {
+    @include Text-FS-FW-LH(24px, 400, 48px);
+  }
+
+  .md-h3 {
+    @include Text-FS-FW-LH(16px, 700, 32px);
+  }
+
+  .md-h4 {
+    @include Text-FS-FW-LH(14px, 700, 28px);
+  }
+
+  .sm-h5 {
+    @include Text-FS-FW-LH(16px, 400, 32px);
+  }
+
+  .sm-h6 {
+    @include Text-FS-FW-LH(14px, 400, 28px);
+  }
 }
 
 

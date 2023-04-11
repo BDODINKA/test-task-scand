@@ -1,0 +1,31 @@
+@import "@/styles/_variables.scss";
+@import "@/styles/_mixins.scss";
+
+
+.list_items {
+
+
+  .list_item {
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+
+    .item_link {
+      margin-top: 32px;
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 32px;
+      /* or 160% */
+
+      display: flex;
+      align-items: center;
+
+      /* Gray */
+
+      color: #777777;
+
+    }
+  }
+}

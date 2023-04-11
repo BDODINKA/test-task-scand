@@ -1,0 +1,48 @@
+@import "@/styles/_mixins.scss";
+@import "@/styles/_variables.scss";
+
+.wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 100px;
+  display: flex;
+  gap: calc((179 / (1400 / 100)) * 1%);
+
+
+  .description_items {
+    max-width: 300px;
+    width: 100%;
+
+    .description {
+      margin-top: 40px;
+    }
+
+    .copyright {
+      margin-top: 64px;
+    }
+
+    .description,
+    .copyright {
+      font-family: 'Open Sans', sans-serif;
+      @include Text-FS-FW-LH(16px, 400, 28px);
+      color: $color-third;
+    }
+
+  }
+
+  .nav_items {
+    display: flex;
+    gap: 96px;
+
+    .nav_items_btn {
+      width: 72px;
+      height: 30px;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 28px;
+      color: #0A2640;
+      margin-left: 15px;
+      pointer-events: none;
+    }
+  }
+}

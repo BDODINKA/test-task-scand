@@ -1,4 +1,19 @@
 @import "@/styles/_variables.scss";
+@import "@/styles/_mixins.scss";
+
 .input {
   background: $color-four;
+  border: 2px solid #FFFFFF;
+  border-radius: 240px;
+  width: 374px;
+  height: 60px;
+  text-indent: 32px;
+  @include Text-FS-FW-LH(20px, 400, 32px);
+
+  &::placeholder {
+    color: $color-secondary;
+    text-indent: 32px;
+    font-family: 'Open Sans', sans-serif;
+    @include Text-FS-FW-LH(20px, 400, 32px);
+  }
 }
