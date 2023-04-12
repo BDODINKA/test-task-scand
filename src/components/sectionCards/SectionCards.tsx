@@ -30,7 +30,7 @@ export const SectionCards = () => {
             </div>
             <Button
                 fill={"transparent"}
-                children={'Load More'}
+                children={'Load more'}
                 className={style.btn}
             />
         </Wrapper>

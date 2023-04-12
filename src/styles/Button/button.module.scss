@@ -6,8 +6,8 @@
   background: $color-five;
   border: 2px solid $color-five;
   border-radius: 56px;
-  width: 128px;
-  height: 40px;
+  width: 130px;
+  height: 42px;
   color: $color-primary;
   font-family: 'Open Sans', sans-serif;
   @include Text-FS-FW-LH(16px, 700, 24px);
@@ -19,8 +19,8 @@
 }
 
 .transparent {
-  width: 128px;
-  height: 40px;
+  width: 130px;
+  height: 42px;
   background: transparent;
   border: 2px solid $color-primary;
   border-radius: 24px;

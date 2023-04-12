@@ -2,6 +2,7 @@
 @import "@/styles/_mixins.scss";
 
 .lg-h1 {
+  font-family: 'Manrope', sans-serif;
   @include Text-FS-FW-LH(64px, 400, 84px);
 }
 
@@ -47,7 +48,7 @@
 
 @media screen and (max-width: 768px) {
   .lg-h1 {
-    @include Text-FS-FW-LH(32px, 400, 64px);
+    @include Text-FS-FW-LH(30px, 400, 64px);
   }
 
   .lg-h2 {

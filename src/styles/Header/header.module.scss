@@ -5,7 +5,7 @@
   width: 100%;
 
   .wrapper {
-    max-width: 1200px;
+    max-width: 1400px;
     padding: 56px 100px 45px;
     margin: 0 auto;
     display: flex;
@@ -22,6 +22,7 @@
       display: flex;
       align-items: center;
       gap: 40px;
+      margin-right: 7px;
 
       .nav_item {
         color: $color-primary;
@@ -65,7 +66,6 @@
         height: 26px;
         cursor: pointer;
         background: $color-four;
-        box-shadow: 1px 1px 4px $color-third;
 
         > span {
           display: block;

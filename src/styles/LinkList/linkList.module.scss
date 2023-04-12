@@ -8,8 +8,17 @@
     display: flex;
     align-items: flex-end;
 
-    .item_link {
+    &:not(:first-child) {
       margin-top: 32px;
+    }
+
+    &:nth-child(2) {
+      margin-top: 40px;
+    }
+
+
+    .item_link {
+
       font-family: 'Open Sans', sans-serif;
       @include Text-FS-FW-LH(20px, 400, 32px);
       color: $color-third;
@@ -24,6 +33,7 @@
       display: flex;
       align-items: flex-end;
       justify-content: center;
+
       .item_link {
         margin-top: 12px;
         font-family: 'Open Sans', sans-serif;

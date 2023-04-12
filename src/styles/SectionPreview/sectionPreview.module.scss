@@ -36,6 +36,7 @@
     gap: 12px;
     max-width: 550px;
     width: 100%;
+    min-height: 248px;
 
     .text {
       font-family: 'Manrope', sans-serif;
@@ -45,7 +46,7 @@
     }
 
     .author {
-      margin-top: 20px;
+      margin-top: 10px;
     }
 
   }
@@ -67,6 +68,7 @@
 
     .content {
       max-width: 100%;
+      min-height: min-content;
 
       .text {
         font-size: 32px;

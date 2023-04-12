@@ -4,19 +4,20 @@
 .wrapper {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 100px;
+  padding: 180px 100px;
   display: flex;
-  gap: calc((179 / (1400 / 100)) * 1%);
+  gap: calc((179 / (1200 / 100)) * 1%);
 
   .description_items {
     max-width: 300px;
     width: 100%;
 
     .logo {
+      margin-top: 2px;
     }
 
     .description {
-      margin-top: 40px;
+      margin-top: 38px;
     }
 
     .copyright {
@@ -33,15 +34,16 @@
   }
 
   .nav_items {
-    display: flex;
-    gap: 96px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 87px;
+    margin-top: 6px;
 
     .nav_items_btn {
       width: 72px;
       height: 30px;
-      font-weight: 700;
-      font-size: 13px;
-      line-height: 28px;
+      @include Text-FS-FW-LH(13px, 700, 28px);
       color: $color-primary;
       margin-left: 15px;
       pointer-events: none;
