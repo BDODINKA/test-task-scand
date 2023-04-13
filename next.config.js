@@ -1,22 +1,12 @@
 /** @type {import('next').NextConfig} */
-const isGithubActions = process.env.GITHUB_ACTIONS || false
+const isProd = process.env.NODE_ENV === 'production'
 
-let assetPrefix = ''
-let basePath = ''
-
-if (isGithubActions) {
-  const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
-
-  assetPrefix = `/${repo}/`
-  basePath = `/${repo}`
-}
+module.exports = {}
 
 module.exports = {
   reactStrictMode: true,
-  assetPrefix: assetPrefix,
-  basePath: basePath,
+  assetPrefix: isProd ? '/your-github-repo-name/' : '',
   images: {
-    loader: 'imgix',
-    path: 'the "domain" of your Imigix source',
+    unoptimized: true,
   },
 }
