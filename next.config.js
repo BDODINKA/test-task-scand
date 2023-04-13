@@ -5,7 +5,7 @@ module.exports = {}
 
 module.exports = {
   reactStrictMode: true,
-  assetPrefix: isProd ? '/your-github-repo-name/' : '',
+  assetPrefix: isProd ? '/test-task-scand/' : '',
   images: {
     unoptimized: true,
   },
