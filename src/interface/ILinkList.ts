@@ -1,5 +1,5 @@
 export interface ILinkList {
-    title: string,
-    href?: string
-    hiring?: boolean
+  title: string
+  href?: string
+  hiring?: boolean
 }

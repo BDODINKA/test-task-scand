@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 
 export interface IAuthor {
-    ava: string
-    children: React.ReactNode
-    className?: string
+  ava: string
+  children: React.ReactNode
+  className?: string
 }

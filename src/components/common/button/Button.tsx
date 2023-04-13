@@ -1,24 +1,31 @@
-import React, {FC, HTMLAttributes} from 'react';
-import {IButton} from "@/interface/IButton";
-import style from "@/styles/Button/button.module.scss";
+import React, { FC, HTMLAttributes } from 'react'
 
-export const Button: FC<IButton & HTMLAttributes<HTMLButtonElement>> = ({className, children, fill, ...rest}) => {
+import { IButton } from '@/interface/IButton'
+import style from '@/styles/Button/button.module.scss'
 
-    const finalClass = (data: IButton) => {
-        switch (data.fill) {
-            case "colored": {
-                return className ? `${style.colored} ${className}` : style.colored
-            }
-            case "transparent": {
-                return className ? `${style.transparent} ${className}` : style.transparent
-            }
-            default: {
-                return
-            }
-        }
+export const Button: FC<IButton & HTMLAttributes<HTMLButtonElement>> = ({
+  className,
+  children,
+  fill,
+  ...rest
+}) => {
+  const finalClass = (data: IButton) => {
+    switch (data.fill) {
+      case 'colored': {
+        return className ? `${style.colored} ${className}` : style.colored
+      }
+      case 'transparent': {
+        return className ? `${style.transparent} ${className}` : style.transparent
+      }
+      default: {
+        return
+      }
     }
+  }
 
-    return (
-        <button className={finalClass({fill})} {...rest}>{children}</button>
-    );
-};
+  return (
+    <button className={finalClass({ fill })} {...rest}>
+      {children}
+    </button>
+  )
+}
