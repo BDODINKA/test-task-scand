@@ -18,7 +18,7 @@ export const LevelCard: FC<{
     <div className={theme === 'white' ? `${style.wrapper} ${style.wrapper_white}` : style.wrapper}>
       <div>
         <div className={style.top_block}>
-          <Star className={theme === 'white' && style.star_white} />
+          <Star className={theme === 'white' ? style.star_white : undefined} />
           <Title
             size={'lg-h2'}
             className={theme === 'white' ? `${style.title} ${style.text_white}` : style.title}

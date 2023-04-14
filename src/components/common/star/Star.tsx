@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 
 import style from '@/styles/Star/star.module.scss'
 
-export const Star: FC<{ className: string }> = ({ className }) => {
+export const Star: FC<{ className: string | undefined }> = ({ className }) => {
   return (
     <svg
       width="800px"
