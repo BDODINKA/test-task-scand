@@ -1,0 +1,12 @@
+@import "@/styles/_variables.scss";
+
+.star {
+  width: 56px;
+  height: 56px;
+  padding: 10px;
+  background: $color-six;
+  border-radius: 50%;
+  fill: $color-four;
+}
+
+

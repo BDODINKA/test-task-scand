@@ -1,0 +1,89 @@
+@import "@/styles/_variables.scss";
+@import "@/styles/_mixins.scss";
+
+.wrapper {
+  background: $color-five;
+  width: 264px;
+  height: 272px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  justify-content: space-between;
+
+  &.wrapper_white {
+    background: $color-four;
+    box-shadow: 0 0 10px 0 $color-third;
+
+    .text_white {
+      color: $color-third;
+    }
+  }
+
+  .top_block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .star_white {
+      background: transparent;
+      fill: $color-seven;
+    }
+
+    .title {
+      font-family: 'Montserrat', sans-serif;
+      @include Text-FS-FW-LH(32px, 400, 72px);
+      letter-spacing: 0.006em;
+      color: $color-four;
+
+      &.text_white {
+        color: $color-third;
+      }
+    }
+  }
+
+  .items {
+    padding-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+
+    .item {
+      display: flex;
+      justify-content: flex-end;
+      gap: 21px;
+
+      &.item_white {
+        gap: 16px;
+        margin: 0 5px 0;
+      }
+
+      .label {
+        font-family: 'Roboto', sans-serif;
+        @include Text-FS-FW-LH(16px, 400, 16px);
+        color: $color-four;
+
+        &.text_white {
+          color: $color-third;
+        }
+
+      }
+    }
+  }
+
+  .subtitle {
+    font-family: 'Roboto', sans-serif;
+    @include Text-FS-FW-LH(24px, 700, 24px);
+    text-align: right;
+    color: $color-four;
+  }
+
+  .signature {
+    font-family: 'Roboto', sans-serif;
+    @include Text-FS-FW-LH(13px, 700, 28px);
+    letter-spacing: 0.0215em;
+    text-align: center;
+    padding-top: 20px;
+    color: $color-four;
+  }
+}

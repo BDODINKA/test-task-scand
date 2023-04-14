@@ -23,7 +23,7 @@ export const Header: FC = () => {
           <span></span>
         </label>
         <nav className={style.nav_items}>
-          <Link href={'#'} className={style.nav_item}>
+          <Link href={'/LevelPage'} className={style.nav_item}>
             Product
           </Link>
           <Link href={'#'} className={style.nav_item}>
